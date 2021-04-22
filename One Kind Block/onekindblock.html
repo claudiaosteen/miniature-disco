@@ -9,52 +9,467 @@
 
       body{
 
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Raleway', sans-serif; margin:0; padding:0;
+      }
+
+      div.mainframe{
+        /* max-width:1200px; */
+        margin:0 auto;
       }
       div.txt h1{
-        color:#000000;
+        color:#ffffff;
         position:absolute;
-        top:10%;
+        top:9%;
         left:5%;
+        right:0%;
+        bottom:0%;
+        font-size:5em;
+        font-weight:bold;
       }
-      div.txt h2{
+
+
+
+
+      div.intro{
+
+        position:relative;
         color:#000000;
         background:rgba(255,255,255,0.7);
-        border-radius: 20%;
-        padding:1em;
-        font-weight:300;
-        position:fixed;
+        border-top-left-radius:20px;
+        border-bottom-left-radius: 20px;
+        padding:1.5em;
+        position:absolute;
         left:65%;
         bottom:15%;
-        font-size:3vw;
-        line-height:1.25em;
-        font-weight:light;
 
+      }
+      div.intro h2{
+        font-size:1.5em;
+        line-height:1.5em;
+        font-weight:normal;
+        font-weight:300;
       }
       button.firstpage{
         color:#ffffff;
         border:none;
-        left:77%;
-        bottom:16%;
-        padding:1em;
-        font-size:1vw;
+        left:50%;
+        bottom:0%;
+        transform:translate(-50%,50%);
+        padding:1.5em;
+        font-size:1em;
         cursor:pointer;
         background-color:#000000;
         position:absolute;
+        border-radius: 10px;
 
 
       }
       div.hero{
         height:100vh;
-        background-image: url("res/heropage1.jpeg");
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("res/heropage1.jpeg");
         background-repeat:no-repeat;
         background-position:center center;
         background-size: cover;
         perspective: 1000px;
-        position:relative;
         object-fit:contain;
 
       }
+
+      div.slide2{min-height:100vh;
+      background-color:rbga(22, 59, 22, 1);}
+
+      div.grid{
+        display:grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap:4vw;
+        background-color:#032902;
+        min-height:100vh;
+        }
+
+        div.grid div.img{
+          position:relative;
+        }
+        div.grid div.img h3 {
+          display: block;
+    position: absolute;
+    background-color: rgba(255,255,255, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 6em;
+    font-weight: bold;
+    color: #032902;
+    margin: 0;
+    padding: 1em 0.5em;
+    text-align: right;
+
+        }
+
+      div.grid img {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position: center center;
+
+      }
+      div.grid div.txt {
+        padding: 2em 2em 2em 2em;
+        color: #ffffff;
+        max-width:60ch;
+        font-size: 1.5em;
+        line-height: 2em;
+        position: relative;
+        top: 20%;
+
+
+      }
+      button.secondpage{
+        color:#000000;
+        border:none;
+        padding:1em;
+        font-size:1em;
+        cursor:pointer;
+        background-color:#ffffff;
+        position:absolute;
+        border-radius: 10px;
+
+
+      }
+
+      div.slide3{min-height:100vh;
+        padding:2vw;
+      }
+
+      div.slide3 img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+        margin-top:4em;
+      }
+
+
+
+
+
+      div.benefits {
+        padding: 15px 15px 15px 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30em;
+        position:relative;
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 3em;
+
+
+
+
+      }
+      div.benefits:after{
+        content:'';
+        display:block;
+        position:absolute;
+        background-image:url('res/tick.png');
+        width:75px;
+        height:75px;
+        background-size:contain;
+        left:0;
+        top: 26px;
+        background-repeat:no-repeat;
+
+
+      }
+
+      div.slide4{
+        min-height:100vh;
+        background-color: #ffffff;
+      }
+
+      div.grid4{
+        display:grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap:4vw;
+        background-color:#ffffff;
+        min-height:100vh;
+      }
+      div.slide4 div.grid4 h4{
+        color:#ffffff;
+        background:rgba(10, 41, 2,0.7);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding:1.5em;
+        position:absolute;
+        top:10%;
+        left:20%;
+        right:0%;
+        bottom:50%;
+        font-size:4.5em;
+        font-weight:bold;
+        text-align: right;
+
+
+      }div.slide4 img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position: center center;
+        min-height:100vh;
+      }
+
+      div.grid4 div.txt p {
+        padding-top: 15em;
+        max-width:30ch;
+        font-size: 2em;
+        line-height: 2.5em;
+        position: relative;
+
+
+
+      }
+      div.grid4 div.txt h2 {
+
+        max-width:30ch;
+        font-size: 2.5em;
+        line-height: 2.5em;
+        position: relative;
+
+      }
+
+      div.slide5{
+        min-height:100vh;
+        background-color:#022406;
+      }
+      div.grid5{
+        display:grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap:2vw;
+        background-color:#022406;
+        min-height:100vh;
+      }
+      div.grid5 div.bubble{
+        background-image: url('res/balconyboxes.jpeg');
+        padding:50px;
+        object-position: left center;
+        left:50px;
+        top:50px;
+        width:1000px;
+        height:1000px;
+        border-radius:50%;
+        display:grid;
+        z-index:100;
+        margin:auto;
+      }
+
+      div.grid5 div.txt h5{
+        color:#ffffff;
+        max-width:30ch;
+        top:9%;
+        left:35%;
+        right:10%;
+        bottom:0%;
+        font-size:7.5em;
+        font-weight:bold;
+        line-height:1.5em;
+        padding-right: 5em;
+        text-align: right;
+
+
+          }
+      div.grid5 div.txt p{
+        padding-left: 2em;
+        color: #ffffff;
+        max-width:30ch;
+        font-size: 2.5em;
+        line-height: 2em;
+        position: relative;
+
+        }
+
+        div.slide6{
+          min-height:100vh;
+          background-color:#022406;
+        }
+        div.grid6{
+          display:grid;
+          grid-template-columns: 2fr 3fr;
+          grid-gap:2vw;
+          background-color:#022406;
+          min-height:100vh;
+        }
+        div.grid6 div.txt p{
+        padding-left: 10em;
+        padding-top: 4em;
+          color: #ffffff;
+          max-width:25ch;
+          font-size: 2.5em;
+          line-height: 2em;
+          position: relative;
+          top: 15%;
+          }
+        div.grid6 div.bubble2{
+          background-image: url('res/greenery.jpeg');
+          padding:50px;
+          object-position: right center;
+          right:50px;
+          top:50px;
+          width:1000px;
+          height:1000px;
+          border-radius:50%;
+          display:grid;
+          z-index:100;
+          margin:auto;
+        }
+
+
+
+
+        div.slide7{
+          min-height:100vh;
+          background-color:#022406;
+        }
+        div.grid7{
+          display:grid;
+          grid-template-columns: 3fr 2fr;
+          grid-gap:2vw;
+          background-color:#022406;
+          min-height:100vh;
+        }
+        div.grid7 div.txt p{
+          padding-left: 1em;
+          padding-top:10em;
+          color: #ffffff;
+          max-width:30ch;
+          font-size: 2.5em;
+          line-height: 2em;
+          position: relative;
+
+          }
+
+        div.grid7 div.bubble3{
+          background-image: url('res/circleplants.jpeg');
+          padding:50px;
+          object-position: left center;
+          right:50px;
+          top:50px;
+          width:1000px;
+          height:1000px;
+          border-radius:50%;
+          display:grid;
+          z-index:100;
+          margin:auto;
+        }
+        div.slide8{
+          min-height:100vh;
+          background-color:#022406;
+        }
+        div.grid8{
+          display:grid;
+          grid-template-columns: 2fr 3fr;
+          grid-gap:2vw;
+          background-color:#022406;
+          min-height:100vh;
+        }
+        div.grid8 div.txt p{
+        padding-left: 10em;
+        padding-top: 3em;
+          color: #ffffff;
+          max-width:25ch;
+          font-size: 2.5em;
+          line-height: 2em;
+          position: relative;
+          top: 15%;
+          }
+        div.grid8 div.bubble4{
+          background-image: url('res/lightplants.jpeg');
+          padding:50px;
+          object-position: right center;
+          right:50px;
+          top:50px;
+          width:1000px;
+          height:1000px;
+          border-radius:50%;
+          display:grid;
+          z-index:100;
+          margin:auto;
+        }
+
+
+
+        div.hero2{
+
+            height:100vh;
+            background-image:url("res/hero2.jpg");
+            background-repeat:no-repeat;
+            background-position:center center;
+            background-size: cover;
+            perspective: 1000px;
+            object-fit:contain;
+
+        }
+
+        div.hero2 div.txt h1{
+          color:#022406;
+          padding-left:30%;
+          padding-top:22%;
+          padding-right:20%;
+          font-size: 7em;
+        }
+
+        div.slide10 {
+          min-height:100vh;
+          background-color: #ffffff;
+        }
+        div.grid10{
+          display:grid;
+          grid-template-columns: 2fr 2fr;
+          min-height:100vh;
+
+
+        }
+
+        div.bubble5{
+          background-image: url('res/youllget.jpeg');
+          padding:50px;
+          object-position: right center;
+          right:50px;
+          top:50px;
+          width:900px;
+          height:900px;
+          border-radius:50%;
+          display:grid;
+          z-index:100;
+          margin:auto;
+
+        }
+
+        div.txt2 p{
+          padding-left: 10em;
+          padding-top: 3em;
+            max-width:25ch;
+            font-size: 2.5em;
+            line-height: 2em;
+            position: relative;
+            top: 15%;
+
+
+
+        }
+
+        button.lastpage{
+          color:#ffffff;
+          border:none;
+          padding:1em;
+          font-size:1em;
+          cursor:pointer;
+          background-color:#000000;
+          position:absolute;
+          border-radius: 10px;
+          right:30%;
+
+        }
 
 
       </style>
@@ -63,19 +478,168 @@
 
     </head>
     <body>
+      <div class="mainframe">
+
+
       <div class="hero">
         <div class="txt">
+          <div class="slide hero">
           <h1>ONE KIND
              BLOCK</h1>
-          <h2> The world's first LEGO-like hydroponic unit
+          <div class= "intro"><h2> The world's first LEGO-like hydroponic unit
             designed to make cities fertile by adapting to
             your windows, balconies, corridor and walls.</h2>
       <button class="firstpage" type="ORDER NOW!">ORDER NOW!</button>
+    </div>
 
-        </div>
+
+      </div>
+      </div>
 
       </div>
 
+      <div class="slide2">
+        <div class="grid">
+          <div class="img">
+          <img src="res/slide2img.jpeg">
+          <h3>WHY IT IS IMPORTANT</h3>
+        </div>
+
+          <div class= "txt">
+
+
+            <p>60% of the world lives in cities. Nearly 100% of apartments aren't designed for urban farming. And the virus has shown that our food supply chain that can be disrupted.
+
+              Our vision is simple. We have to make cities fertile.
+
+              The patent pending One Kind Block is the world's first modular, LEGO-like hydroponic system designed to adapt to any apartment. Imagine if LEGO and IKEA came up with a farming unit. One Kind Block is a serious urban farming platform and looks great at the same time.</p>
+                <button class="secondpage" type="GET IT windows">GET IT NOW</button>
+
+          </div>
+        </div>
+      </div>
+
+        <div class="slide3">
+        <div class="img">
+            <img src="res/slide3.png"></div>
+
+        <div class="benefits">Multi-use on windows, balconies, corridors, and more </div>
+        <div class="benefits">Highly modular and configurable </div>
+        <div class="benefits">Made of food grade ABS plastic</div>
+        <div class="benefits">Affordable, at $8.20 per plant</div>
+        <div class="benefits">Designed for aesthetic appeal and practical farming</div>
+        <div class="benefits">Made consciously in Singapore</div>
+
+      </div>
+
+      <div class="slide4">
+        <div class="grid4">
+
+            <div class="img">
+            <img src="res/3blocks.jpeg"></div>
+
+          <div class="txt">
+            <h4>HOW MUCH
+              CAN YOU GROW?</h4>
+
+
+            <p>We've calculated that a 2x1m wall can fill a family of 2's vegetable requirements for a month, which roughly translates to 6-10kg of fast-growing leafy vegetables like spinach, kang kong, lettuce, bok choy etc.</p>
+
+            <h2>The One Kind Block offers food independence at a very affordable price. </h2></div>
+
+
+
+
+          </div>
+        </div>
+
+
+          <div class="slide5">
+            <div class="grid5">
+              <div class="bubble">
+
+              </div>
+
+              <div class="txt">
+
+                <h5>GROW FROM ANYWHERE</h5>
+
+                <p>The OKB's unique back attachment allows you to hang it anywhere in any home. We've tested it on windows, grills, balconies, walls, and gates.</p></div>
+
+              </div>
+              </div>
+
+              <div class="slide6">
+                <div class="grid6">
+
+
+                  <div class="txt">
+
+                    <p> It doesn't take up any walkway space along HDB corridors or condominium hallways, so don't worry, neighbors won't complain. </p></div>
+                    <div class="bubble2">
+
+                    </div>
+
+                  </div>
+                  </div>
+
+                  <div class="slide7">
+                    <div class="grid7">
+                        <div class="bubble3"></div>
+
+                      <div class="txt">
+
+                        <p> For windows or grills, use the zipties supplied in your One Kind Block set. For walls, you can use adhesive wall hooks (that support 3-5kg), nails or just plain adhesive tape. </p></div>
+                      </div>
+                      </div>
+
+                      <div class="slide8">
+                        <div class="grid8">
+
+
+                          <div class="txt">
+
+                            <p> One Kind Block really is a plug & play urban farming system. That means the only limit to how many blocks you can have is your imagination. Then simply buy the seeds and hydroponic solution from nurseries or online and start growing. </p></div>
+                            <div class="bubble4">
+
+                            </div>
+
+                          </div>
+                          </div>
+
+
+                    <div class="slide9">
+                      <div class="hero2">
+                        <div class="txt">
+                        <h1>THE POSSIBILITIES ARE ENDLESS</h1>
+                      </div>
+
+
+                      </div>
+                    </div>
+
+                    <div class="slide10">
+                        <div class="topgrid">
+                          <img src="res/ordernow.jpg">
+                          <h1>and you'll get</h1></div>
+
+                          <div class="grid10">
+                            <div class="bubble5"></div>
+                          <div class="txt2">
+
+                          <p>three 9x9x18cm blocks, 2 end caps, 6 cups and sponges, and lastly 6 durable zipties. That's all you need to get started with the One Kind Block! All the blocks are connected, so all you have to do is fill up one to fill up the rest. </p>
+
+
+                        <button class="lastpage" type="Get yours for $39!">Get yours for $39</button></div>
+
+                      </div>
+                      </div>
+
+
+
+
+
+    </div>
 
 
 
