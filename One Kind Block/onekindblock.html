@@ -10,6 +10,7 @@
       body{
 
         font-family: 'Raleway', sans-serif; margin:0; padding:0;
+        font-size:max(min(0.7em,1vw),0.5em);
       }
 
       div.mainframe{
@@ -76,7 +77,7 @@
       }
 
       div.slide2{min-height:100vh;
-      background-color:rbga(22, 59, 22, 1);}
+      background-color:rbga(22, 59, 22, 1.0);}
 
       div.grid{
         display:grid;
@@ -173,8 +174,9 @@
         display:block;
         position:absolute;
         background-image:url('res/tick.png');
-        width:75px;
-        height:75px;
+        width:40px;
+        height:40px;
+
         background-size:contain;
         left:0;
         top: 26px;
@@ -195,6 +197,21 @@
         background-color:#ffffff;
         min-height:100vh;
       }
+
+      @media only screen and (max-width: 800px) {
+           div.grid4{grid-template-columns:1fr;}
+           div.grid5{grid-template-columns:1fr;}
+           div.grid6{grid-template-columns:1fr;}
+           div.grid7{grid-template-columns:1fr;}
+           div.grid8{grid-template-columns:1fr;}
+           div.grid10{grid-template-columns:1fr;}
+          }
+
+      div.slide4 div.grid4 div.txt{
+        position:relative;
+
+      }
+
       div.slide4 div.grid4 h4{
         color:#ffffff;
         background:rgba(10, 41, 2,0.7);
@@ -202,10 +219,9 @@
         border-bottom-left-radius: 20px;
         padding:1.5em;
         position:absolute;
-        top:10%;
-        left:20%;
+        top:0%;
+        left:-30%;
         right:0%;
-        bottom:50%;
         font-size:4.5em;
         font-weight:bold;
         text-align: right;
@@ -231,7 +247,7 @@
       }
       div.grid4 div.txt h2 {
 
-        max-width:30ch;
+        max-width:24ch;
         font-size: 2.5em;
         line-height: 2.5em;
         position: relative;
@@ -249,40 +265,42 @@
         background-color:#022406;
         min-height:100vh;
       }
-      div.grid5 div.bubble{
+      div.bubble1{
         background-image: url('res/balconyboxes.jpeg');
-        padding:50px;
         object-position: left center;
+      }
+
+       div.bubble{
+        padding:50px;
         left:50px;
         top:50px;
-        width:1000px;
-        height:1000px;
+        width:20vw;
+        height:20vw;
         border-radius:50%;
         display:grid;
         z-index:100;
         margin:auto;
+        background-repeat:no-repeat;
+        background-size:cover;
       }
 
       div.grid5 div.txt h5{
         color:#ffffff;
-        max-width:30ch;
-        top:9%;
-        left:35%;
-        right:10%;
-        bottom:0%;
-        font-size:7.5em;
+        max-width:35ch;
+        font-size:6em;
         font-weight:bold;
         line-height:1.5em;
-        padding-right: 5em;
+        padding-right: 3em;
         text-align: right;
+        padding-left:2em;
 
 
           }
       div.grid5 div.txt p{
-        padding-left: 2em;
+        padding-left: 5em;
         color: #ffffff;
         max-width:30ch;
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: 2em;
         position: relative;
 
@@ -300,27 +318,18 @@
           min-height:100vh;
         }
         div.grid6 div.txt p{
-        padding-left: 10em;
-        padding-top: 4em;
+        padding-left: 5em;
+        padding-top: 7em;
           color: #ffffff;
           max-width:25ch;
-          font-size: 2.5em;
+          font-size: 2em;
           line-height: 2em;
           position: relative;
           top: 15%;
           }
-        div.grid6 div.bubble2{
+      div.bubble2{
           background-image: url('res/greenery.jpeg');
-          padding:50px;
           object-position: right center;
-          right:50px;
-          top:50px;
-          width:1000px;
-          height:1000px;
-          border-radius:50%;
-          display:grid;
-          z-index:100;
-          margin:auto;
         }
 
 
@@ -339,10 +348,10 @@
         }
         div.grid7 div.txt p{
           padding-left: 1em;
-          padding-top:10em;
+          padding-top:13em;
           color: #ffffff;
           max-width:30ch;
-          font-size: 2.5em;
+          font-size: 2em;
           line-height: 2em;
           position: relative;
 
@@ -350,16 +359,8 @@
 
         div.grid7 div.bubble3{
           background-image: url('res/circleplants.jpeg');
-          padding:50px;
           object-position: left center;
-          right:50px;
-          top:50px;
-          width:1000px;
-          height:1000px;
-          border-radius:50%;
-          display:grid;
-          z-index:100;
-          margin:auto;
+
         }
         div.slide8{
           min-height:100vh;
@@ -373,27 +374,18 @@
           min-height:100vh;
         }
         div.grid8 div.txt p{
-        padding-left: 10em;
+        padding-left: 4em;
         padding-top: 3em;
           color: #ffffff;
-          max-width:25ch;
-          font-size: 2.5em;
+          max-width:30ch;
+          font-size: 2em;
           line-height: 2em;
           position: relative;
           top: 15%;
           }
         div.grid8 div.bubble4{
           background-image: url('res/lightplants.jpeg');
-          padding:50px;
           object-position: right center;
-          right:50px;
-          top:50px;
-          width:1000px;
-          height:1000px;
-          border-radius:50%;
-          display:grid;
-          z-index:100;
-          margin:auto;
         }
 
 
@@ -413,9 +405,9 @@
         div.hero2 div.txt h1{
           color:#022406;
           padding-left:30%;
-          padding-top:22%;
+          padding-top:5em;
           padding-right:20%;
-          font-size: 7em;
+          font-size: 5em;
         }
 
         div.slide10 {
@@ -425,34 +417,26 @@
         div.grid10{
           display:grid;
           grid-template-columns: 2fr 2fr;
-          min-height:100vh;
+
 
 
         }
 
         div.bubble5{
           background-image: url('res/youllget.jpeg');
-          padding:50px;
           object-position: right center;
-          right:50px;
-          top:50px;
-          width:900px;
-          height:900px;
-          border-radius:50%;
-          display:grid;
-          z-index:100;
-          margin:auto;
+
 
         }
 
         div.txt2 p{
-          padding-left: 10em;
+          padding-left: 4em;
           padding-top: 3em;
             max-width:25ch;
-            font-size: 2.5em;
+            font-size: 2em;
             line-height: 2em;
             position: relative;
-            top: 15%;
+
 
 
 
@@ -467,9 +451,28 @@
           background-color:#000000;
           position:absolute;
           border-radius: 10px;
-          right:30%;
+          margin-left: 10em;
+
 
         }
+
+        div.topgrid img{
+          width: 50%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 2em;
+          margin-top:6em;
+
+        }
+
+        div.topgrid h1{
+          font-size:5em;
+          padding-left:7em;
+
+        }
+
+
 
 
       </style>
@@ -556,7 +559,7 @@
 
           <div class="slide5">
             <div class="grid5">
-              <div class="bubble">
+              <div class="bubble bubble1">
 
               </div>
 
@@ -576,7 +579,7 @@
                   <div class="txt">
 
                     <p> It doesn't take up any walkway space along HDB corridors or condominium hallways, so don't worry, neighbors won't complain. </p></div>
-                    <div class="bubble2">
+                    <div class="bubble bubble2">
 
                     </div>
 
@@ -585,7 +588,7 @@
 
                   <div class="slide7">
                     <div class="grid7">
-                        <div class="bubble3"></div>
+                        <div class="bubble bubble3"></div>
 
                       <div class="txt">
 
@@ -600,7 +603,7 @@
                           <div class="txt">
 
                             <p> One Kind Block really is a plug & play urban farming system. That means the only limit to how many blocks you can have is your imagination. Then simply buy the seeds and hydroponic solution from nurseries or online and start growing. </p></div>
-                            <div class="bubble4">
+                            <div class="bubble bubble4">
 
                             </div>
 
@@ -624,13 +627,13 @@
                           <h1>and you'll get</h1></div>
 
                           <div class="grid10">
-                            <div class="bubble5"></div>
+                            <div class="bubble bubble5"></div>
                           <div class="txt2">
 
                           <p>three 9x9x18cm blocks, 2 end caps, 6 cups and sponges, and lastly 6 durable zipties. That's all you need to get started with the One Kind Block! All the blocks are connected, so all you have to do is fill up one to fill up the rest. </p>
 
 
-                        <button class="lastpage" type="Get yours for $39!">Get yours for $39</button></div>
+                        <button class="lastpage" type="Get yours for $39!">Get yours for $39!</button></div>
 
                       </div>
                       </div>
