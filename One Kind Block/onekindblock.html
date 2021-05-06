@@ -187,6 +187,7 @@
 
       div.slide4{
         min-height:100vh;
+        max-hieght:100vh;
         background-color: #ffffff;
       }
 
@@ -198,14 +199,7 @@
         min-height:100vh;
       }
 
-      @media only screen and (max-width: 800px) {
-           div.grid4{grid-template-columns:1fr;}
-           div.grid5{grid-template-columns:1fr;}
-           div.grid6{grid-template-columns:1fr;}
-           div.grid7{grid-template-columns:1fr;}
-           div.grid8{grid-template-columns:1fr;}
-           div.grid10{grid-template-columns:1fr;}
-          }
+
 
       div.slide4 div.grid4 div.txt{
         position:relative;
@@ -222,7 +216,7 @@
         top:0%;
         left:-30%;
         right:0%;
-        font-size:4.5em;
+        font-size:3em;
         font-weight:bold;
         text-align: right;
 
@@ -233,13 +227,14 @@
         object-fit:cover;
         object-position: center center;
         min-height:100vh;
+        max-height: 100vh;
       }
 
       div.grid4 div.txt p {
-        padding-top: 15em;
+        padding-top: 13em;
         max-width:30ch;
-        font-size: 2em;
-        line-height: 2.5em;
+        font-size: 1.5em;
+        line-height: 2em;
         position: relative;
 
 
@@ -248,7 +243,7 @@
       div.grid4 div.txt h2 {
 
         max-width:24ch;
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: 2.5em;
         position: relative;
 
@@ -431,7 +426,7 @@
 
         div.txt2 p{
           padding-left: 4em;
-          padding-top: 3em;
+          padding-top: 1.5em;
             max-width:25ch;
             font-size: 2em;
             line-height: 2em;
@@ -471,7 +466,14 @@
           padding-left:7em;
 
         }
-
+        @media only screen and (max-width: 800px) {
+             div.grid4{grid-template-columns:1fr;}
+             div.grid5{grid-template-columns:1fr;}
+             div.grid6{grid-template-columns:1fr;}
+             div.grid7{grid-template-columns:1fr;}
+             div.grid8{grid-template-columns:1fr;}
+             div.grid10{grid-template-columns:1fr;}
+            }
 
 
 
